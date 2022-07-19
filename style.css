@@ -1,0 +1,93 @@
+body{
+  width: 100vw;
+  height: 100vh;
+  
+  margin: 0;
+  padding: 0;
+  
+
+  background: #696969;
+  background: -webkit-linear-gradient(bottom, #696969, #C3AAFF);
+  background: -moz-linear-gradient(bottom, #696969, #C3AAFF);
+  background: linear-gradient(to top, #696969, #C3AAFF);
+}
+
+.clock-container{
+  
+  width: 50vw;
+  height: 20vh;
+  margin-left: 25vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  background: #FFCA7E;
+  background: -webkit-linear-gradient(right, #FFCA7E, #FF5F68);
+  background: -moz-linear-gradient(right, #FFCA7E, #FF5F68);
+  background: linear-gradient(to left, #FFCA7E, #FF5F68);
+
+  border: 2px solid white;
+  border-radius: 10px;
+}
+.clock{
+  
+  font-size: 100px;
+  font-family: Chakra Petch;
+  color: white;
+  
+}
+
+.buttons{
+  margin: 10px;
+  width: 50vw;
+  height: 10vh;
+  margin-left: 25vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.start{
+
+  width: 20%;
+  height: 40%;
+  background-color: #83ffcb;
+  color: rgb(107, 107, 107);
+  border: 2px solid #ff8383;
+  cursor: pointer;
+  border-radius: 60%;
+  transition: 0.25s ease-in-out forwards 1 ;
+}
+.clear{
+
+  width: 20%;
+  height: 40%;
+  background-color: #b3b3b3;
+  color: rgb(107, 107, 107);
+  border: 2px solid #575757;
+  cursor: pointer;
+  border-radius: 20%;
+  transition: 0.25s ease-in-out forwards 1 ;
+}
+.stop{
+
+  width: 20%;
+  height: 40%;
+  background-color: #ff8383;
+  color: rgb(107, 107, 107);
+  border: 2px solid #83ffcb;
+  cursor: pointer;
+  border-radius: 60%;
+  transition: 0.25s ease-in-out forwards 1 ;
+}
+
+.start:hover,.stop:hover,.clear:hover{
+  transform: scale(1.1);
+  font-size:medium;
+  box-shadow: 3px 5px 5px rgb(61, 61, 61) ;
+}
+.start:active,.stop:active,.clear:active{
+
+  transform: scale(0.99);
+  box-shadow: 2px 2px 3px rgb(49, 49, 49) ;
+}
